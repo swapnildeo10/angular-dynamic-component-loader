@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>Angular Dynamic component loader.</p>
+<ul class="component-list">
+  <li (click)="createComponent('mobile')">Mobile</li>
+  <li (click)="createComponent('laptop')">Laptop</li>
+  <li (click)="createComponent('desktop')">Desktop</li>
+  <li (click)="createComponent('tv')">TV</li>
+  <li (click)="createComponent('refrigerator')">Refrigerator</li>
+</ul>
+<div class="component-area">
+  <ng-container #container></ng-container>
+</div>
